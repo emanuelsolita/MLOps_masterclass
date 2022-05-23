@@ -1,0 +1,16 @@
+name: my-env
+channels:
+  - conda-forge
+
+dependencies:
+  # Python version for this environment
+  - python=3.8.*
+  - numpy=1.22.*
+
+  # Pip version to download pip packages with
+  - pip=22.0.*
+
+  # Pip dependencies not available in conda repos
+  - pip:
+      - azureml-sdk==1.40.*
+      - pandas
